@@ -20,18 +20,6 @@
 
     <script type="text/javascript">
       alert("Hello Klik website ini");
-
-      const input = document.querySelector("input");
-      const button = document.querySelector("button");
-
-      //   Nambah event untuk alert dan apabila jika memasukkan input dan mengklik tombol akan ada list di item
-      button.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        const li = document.createElement("li");
-        li.innerHTML = input.value;
-        document.querySelector("ul").append(li);
-      });
     </script>
   </body>
 </html>
