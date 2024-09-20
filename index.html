@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="title">Hello FSW 2!</h1>
+    <input type="text" />
+    <button class="btn" id="btn-click-me">click me</button>
+    <ul>
+      <li>1 <a href="">Facebook</a></li>
+      <li>2 <a href="">Instagram</a></li>
+      <li>ini ketiga</li>
+    </ul>
+
+    <button class="btn" id="btn-don't-click-me">click me</button>
+
+    <script type="text/javascript">
+      alert("Hello Klik website ini");
+
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+
+      //   Nambah event untuk alert dan apabila jika memasukkan input dan mengklik tombol akan ada list di item
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const li = document.createElement("li");
+        li.innerHTML = input.value;
+        document.querySelector("ul").append(li);
+      });
+    </script>
+  </body>
+</html>
